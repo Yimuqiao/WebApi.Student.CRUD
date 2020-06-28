@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi.Student.CRUD</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Student.CRUD.Controllers.BaseController.Success">
+            <summary>
+            无参成功返回类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.BaseController.Success``1(``0)">
+            <summary>
+            有参的成功返回类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.BaseController.Success``1(``0,System.Int32)">
+            <summary>
+            带参集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="response"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.BaseController.Failure(WebApi.Student.CRUD.Model.ResultCode)">
+            <summary>
+            无参的失败返回类型
+            </summary>
+            <param name="resultCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.BaseController.Failure``1(WebApi.Student.CRUD.Model.ResultCode,``0)">
+            <summary>
+            有参的失败返回类型
+            </summary>
+            <param name="resultCode"></param>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Controllers.EnumExtension">
+            <summary>
+            枚举扩展类
+            </summary>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.EnumExtension.GetDescription(System.Enum)">
+            <summary>
+            获取枚举类型描述
+            </summary>
+            <param name="en"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.GetList(WebApi.Student.CRUD.Model.GetStudentGroupRequest)">
+            <summary>
+            宿舍查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.GetStudentGroupDetail(WebApi.Student.CRUD.Model.GetStudentGroupDetailRequest)">
+            <summary>
+            查询宿舍详情
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.AddStudentGroup(WebApi.Student.CRUD.Model.AddStudentGroupRequest)">
+            <summary>
+            添加宿舍
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.AddStudent(WebApi.Student.CRUD.Model.AddStudentGroupDetailRequest)">
+            <summary>
+            添加宿舍详情
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.UpdateStuGroup(WebApi.Student.CRUD.Model.UpdateStudentGroupRequest)">
+            <summary>
+            修改宿舍
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.UpdateStudent(WebApi.Student.CRUD.Model.UpdateStudentDetailRequest)">
+            <summary>
+            修改宿舍人员
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.DelStudentGroup(WebApi.Student.CRUD.Model.DeleteStudentGroupRequest)">
+            <summary>
+            删除宿舍
+            </summary>
+            <param name="request">请求模型</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.DeleteStudent(WebApi.Student.CRUD.Model.DeleteStudentDetail)">
+            <summary>
+            删除宿舍人员
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.SearchStudentGroup(WebApi.Student.CRUD.Model.DeleteStudentGroupRequest)">
+            <summary>
+            搜索宿舍
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Student.CRUD.Controllers.DemoController.searchStudentSelect(WebApi.Student.CRUD.Model.GetStudentGroupDetailRequest)">
+            <summary>
+            搜索学生
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.GetStudentGroupResult`1">
+            <summary>
+            公共返回
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.GetStudentGroupResult">
+            <summary>
+            无参返回
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.ResultCode">
+            <summary>
+            状态码枚举
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.GetStudentGroupRequest">
+            <summary>
+            查询宿舍
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.GetStudentGroupRequest.StudentGroupId">
+            <summary>
+            宿舍编号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.GetStudentGroupRequest.StudentGroupName">
+            <summary>
+            宿舍名
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.GetStudentGroupDetailRequest">
+            <summary>
+            查询宿舍详情
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.GetStudentGroupDetailRequest.StudentGroupId">
+            <summary>
+            宿舍编号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.GetStudentGroupDetailRequest.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.GetStudentGroupDetailRequest.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.AddStudentGroupRequest">
+            <summary>
+            添加宿舍
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.AddStudentGroupRequest.StudentGroupId">
+            <summary>
+            宿舍编号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.AddStudentGroupRequest.StudentGroupName">
+            <summary>
+            宿舍名
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.AddStudentGroupDetailRequest">
+            <summary>
+            添加宿舍详情
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.AddStudentGroupDetailRequest.StudentGroupId">
+            <summary>
+            宿舍id
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.AddStudentGroupDetailRequest.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.AddStudentGroupDetailRequest.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.AddStudentGroupDetailRequest.StudentBedId">
+            <summary>
+            床位号
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.UpdateStudentGroupRequest">
+            <summary>
+            修改宿舍
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.UpdateStudentGroupRequest.StudentGroupId">
+            <summary>
+            宿舍编号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.UpdateStudentGroupRequest.StudentGroupName">
+            <summary>
+            宿舍名
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.UpdateStudentDetailRequest">
+            <summary>
+            修改宿舍详情
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.UpdateStudentDetailRequest.Id">
+            <summary>
+            宿舍编号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.UpdateStudentDetailRequest.StudentBedId">
+            <summary>
+            床号
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.DeleteStudentDetail">
+            <summary>
+            删除宿舍人员
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentDetail.StudentGroupId">
+            <summary>
+            宿舍编号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentDetail.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentDetail.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentDetail.Id">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentDetail.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentDetail.StudengBedId">
+            <summary>
+            床位
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.Student_Group">
+            <summary>
+            宿舍表
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.DeleteStudentGroupRequest">
+            <summary>
+            请求模型
+            </summary>
+        </member>
+        <member name="P:WebApi.Student.CRUD.Model.DeleteStudentGroupRequest.StudentGroupId">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="T:WebApi.Student.CRUD.Model.Student_Group_Detail">
+            <summary>
+            宿舍详情表
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,168 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 19,
+  "data": [
+    {
+      "authorityId": 1,
+      "authorityName": "宿舍管理",
+      "orderNumber": 1,
+      "menuUrl": null,
+      "menuIcon": "layui-icon-set",      
+      "authority": null,      
+      "parentId": -1
+    },
+    {
+      //权限
+      "authorityId": 2,
+      "authorityName": "D1-101",
+      "orderNumber": 2,
+      "menuUrl": "否",
+      "menuIcon": null,
+      //父节点
+      "parentId": 1
+    },
+    {
+      "authorityId": 3,
+      "authorityName": "田恒宇",
+      "orderNumber": 3,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "1",
+      "parentId": 2
+    },
+    {
+      "authorityId": 4,
+      "authorityName": "姜广泉",
+      "orderNumber": 4,
+      "menuUrl": null,
+      "menuIcon": null,
+      "authority": "2",
+      "parentId": 2
+    },
+    {
+      "authorityId": 5,
+      "authorityName": "尹晨东",
+      "orderNumber": 5,
+      "menuUrl": null,
+      "menuIcon": null,
+      "authority": "3",
+      "parentId": 2
+    },
+    {
+      "authorityId": 6,
+      "authorityName": "张良",
+      "orderNumber": 6,
+      "menuUrl": null,
+      "menuIcon": null,
+      "authority": "4",
+      "parentId": 2
+    },
+    {
+      "authorityId": 7,
+      "authorityName": "D1-102",
+      "orderNumber": 7,
+      "menuUrl": "否",
+      "menuIcon": null,
+      "parentId": 1
+    },
+    {
+      "authorityId": 8,
+      "authorityName": "遇上",
+      "orderNumber": 8,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "1",
+      "parentId": 7
+    },
+    {
+      "authorityId": 9,
+      "authorityName": "张志勇",
+      "orderNumber": 9,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "2",
+      "parentId": 7
+    },
+    {
+      "authorityId": 10,
+      "authorityName": "王志超",
+      "orderNumber": 10,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "3",
+      "parentId": 7
+    },
+    {
+      "authorityId": 11,
+      "authorityName": "盖亚",
+      "orderNumber": 11,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "4",
+      "parentId": 7
+    },
+    
+    {
+      "authorityId": 12,
+      "authorityName": "D1-103",
+      "orderNumber": 12,
+      "menuUrl": "是",
+      "menuIcon": null,
+      "parentId": 1
+    },
+    {
+      "authorityId": 13,
+      "authorityName": "张德",
+      "orderNumber": 13,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "1",
+      "parentId": 12
+    },
+    {
+      "authorityId": 14,
+      "authorityName": "张天霸",
+      "orderNumber": 14,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "2",
+      "parentId": 12
+    },
+    {
+      "authorityId": 15,
+      "authorityName": "崔动",
+      "orderNumber": 15,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "3",
+      "parentId": 12
+    },
+    {
+      "authorityId": 16,
+      "authorityName": "林动",
+      "orderNumber": 16,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "4",
+      "parentId": 12
+    },
+    {
+      "authorityId": 17,
+      "authorityName": "D1-104",
+      "orderNumber": 17,
+      "menuUrl": "否",
+      "menuIcon": null,
+      "parentId": 1
+    },
+    {
+      "authorityId": 18,
+      "authorityName": "林火",
+      "orderNumber": 18,
+      "menuUrl": "",
+      "menuIcon": "",
+      "authority": "1",
+      "parentId": 17
+    }
+  ]
+}
